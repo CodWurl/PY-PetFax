@@ -8,5 +8,5 @@ def new():
         return render_template("facts/new.html")
     elif request.method == "POST":
         for key, value in request.form.items():
-            print(f"{key=} {value}")
-            return render_template("facts/new.html", form_accepted = True)
+            print(f"{key=} {value=}")
+        return render_template("facts/new.html", form_accepted = True)
